@@ -324,17 +324,3 @@ int cpyfile(const char* src, const char* cpy)
 
     return 1;
 }
-
-int main(int argc, char* argv[])
-{
-    if(argc == 2)
-    {
-        backUp(".", argv[1]);
-    }
-    else if(argc == 3)
-    {
-        backUp(argv[1], argv[2]);
-    }
-
-    exit(0);
-}
